@@ -1,0 +1,17 @@
+version: "2"
+services:
+  node:
+    image: "node:9"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/eshop/databases
+    ports:
+      - "8080:8000"
+    expose:
+      - "8080"
+    command: > 
+      "npm install
+      && npm start"

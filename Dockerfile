@@ -1,6 +1,5 @@
-FROM node:carbon
+FROM node:9
 WORKDIR /usr/src/app
-COPY package*.json ./
 RUN npm install
 # Bundle app source
 COPY . .
