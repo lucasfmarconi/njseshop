@@ -60,5 +60,9 @@ typings/
 # next.js build output
 .next
 
-# nosql databases directory
-databases
+# nosql e databases directory
+files-binary
+*.nosql
+*.nosql-counter-backup
+*.nosql-counter2
+webcounter.cache
